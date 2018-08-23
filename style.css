@@ -1,0 +1,177 @@
+body,
+html {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: lightgrey;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+    padding-right: 35px;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border: none;
+}
+
+.btn img {
+    display: block;
+    text-align: center;
+}
+
+.header-title {
+    margin-right: auto;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+.info,
+.settings {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    margin-top: 12px;
+}
+
+.info {
+    background: url("../img/icons8.png") no-repeat center;
+}
+
+.settings {
+    margin-left: 10px;
+    background: url("../img/icons8-set.png") no-repeat center;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 18px;
+    border-collapse: collapse;
+    border: 1.5px solid rgba(110, 106, 106, 0.7)
+}
+
+.table tbody tr:nth-child(1) {
+    display: none;
+}
+
+.table tbody {
+    height: 800px;
+    margin: 0 auto;
+    min-width: 796px;
+    max-width: 1400px;
+    flex-grow: 1;
+    overflow-y: hidden;
+}
+
+.table thead {
+    min-width: 796px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.table thead .asks-price {
+    border-left: none;
+}
+
+.table tbody:hover {
+    overflow-y: scroll;
+}
+
+.table tr {
+    max-width: 100%;
+    position: relative;
+}
+
+.table td {
+    max-width: 100%;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    width: 200px;
+    font-size: 1em;
+    color: grey;
+}
+
+.table-title {
+    border-bottom: 1.5px solid rgba(110, 106, 106, 0.7);
+    vertical-align: center;
+}
+
+.table-title td {
+    padding-top: 14px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+}
+
+.bids-count,
+.bids-total,
+.bids-amount,
+.asks-price {
+    text-align: left;
+}
+
+.bids-price,
+.asks-amount,
+.asks-total,
+.asks-count {
+    text-align: right;
+}
+
+.table .bids-price {
+    padding-right: 20px;
+}
+
+.table .asks-price {
+    padding-left: 10px;
+    border-left: 1.5px solid rgba(110, 106, 106, 0.7);
+}
+
+.table .bids-count {
+    padding-left: 14px;
+}
+
+.table .asks-count {
+    padding-right: 14px;
+}
+
+.table .bids-total {
+    padding-left: 10px;
+}
+
+.table .asks-total {
+    padding-right: 10px;
+}
+
+.table .bids-amount {
+    padding-left: 10px;
+}
+
+.table .asks-amount {
+    padding-right: 10px;
+}
+
+.table tbody tr:hover {
+    background-color: lightgrey;
+}
